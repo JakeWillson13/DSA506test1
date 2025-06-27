@@ -7,7 +7,7 @@ st.title("Applications, Admissions, and Enrollment KPIs")
 
 # -- Data --
 data = {
-    "Metric"      : ["Total Increase", "Average YoY", "Compound Annual Growth Rate"],
+    "Metric"      : ["Total Increase", "Average YoY", "CAGR"],
     "Applications": [40.0, 1.8, 3.8],
     "Admissions"  : [40.0, 1.8, 3.8],
     "Enrollments" : [33.3, 1.5, 3.2],
