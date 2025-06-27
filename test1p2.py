@@ -33,7 +33,7 @@ palette = ["#1f77b4", "#2ca02c", "#d62728"]
 fig = go.Figure()
 
 fig.add_bar(
-    x=sub[""],
+    x=sub[" "],
     y=sub["%"],
     marker_color=palette[: len(sub)],
     text=[f"{v:.1f}%" for v in sub["Percent"]],
