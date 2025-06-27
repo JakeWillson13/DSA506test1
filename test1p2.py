@@ -2,12 +2,12 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 
-st.set_page_config(page_title="Growth Metrics Dashboard", layout="wide")
-st.title("Growth Metrics Dashboard")
+st.set_page_config(page_title="Applications, Admissions, and Enrollment KPIs", layout="wide")
+st.title("Applications, Admissions, and Enrollment KPIs")
 
 # -- Data --
 data = {
-    "Metric"      : ["Total Increase", "Average YoY", "CAGR"],
+    "Metric"      : ["Total Increase", "Average YoY", "Compound Annual Growth Rate"],
     "Applications": [40.0, 1.8, 3.8],
     "Admissions"  : [40.0, 1.8, 3.8],
     "Enrollments" : [33.3, 1.5, 3.2],
@@ -33,8 +33,8 @@ palette = ["#1f77b4", "#2ca02c", "#d62728"]
 fig = go.Figure()
 
 fig.add_bar(
-    x=sub["Category"],
-    y=sub["Percent"],
+    x=sub[""],
+    y=sub["%"],
     marker_color=palette[: len(sub)],
     text=[f"{v:.1f}%" for v in sub["Percent"]],
     textposition="outside",
